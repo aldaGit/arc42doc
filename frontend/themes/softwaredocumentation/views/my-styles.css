@@ -1,0 +1,49 @@
+.checkout-form-view {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 var(--lumo-space-l);
+}
+
+.checkout-form-view .button-layout {
+  margin-bottom: var(--lumo-space-l);
+  margin-top: var(--lumo-space-m);
+}
+
+#my-badge {
+  --lumo-button-size: var(--lumo-size-xs);
+  height: var(--lumo-button-size);
+  padding: 0 calc(var(--lumo-button-size) / 3 + var(--lumo-border-radius-m) / 2);
+  margin: var(--lumo-space-xs) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--lumo-border-radius-l);
+  cursor: var(--lumo-clickable-cursor);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  color: var(--lumo-button-primary-color, var(--lumo-primary-contrast-color));
+  font-weight: 600;
+  min-width: calc(var(--lumo-button-size) * 2.5);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+[part~="cell"] ::slotted(vaadin-grid-cell-content) {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.highlighted-row-orange {
+  background-color: #ffa726;
+  font-weight: bold;
+}
+
+.highlighted-row-green {
+  background-color: #66bb6a;
+  font-weight: bold;
+}
+
+.red-outline {
+  color: red !important;
+}

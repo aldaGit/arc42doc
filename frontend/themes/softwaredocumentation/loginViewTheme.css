@@ -1,0 +1,11 @@
+@import url("./styles.css");
+
+[part="brand"] {
+    background-image: url("stAugustin.jpg");
+    z-index: 1000;
+    background-size: contain;
+}
+
+vaadin-login-overlay-wrapper {
+    --lumo-shade-5pct: tranparent !important;
+}

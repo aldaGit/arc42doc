@@ -1,0 +1,5 @@
+:host [part="brand"] {
+    background-image: url("images/login-banner.jpg");
+    background-size: cover;
+    background-position-x: center;
+}

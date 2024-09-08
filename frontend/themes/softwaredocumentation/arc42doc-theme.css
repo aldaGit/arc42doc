@@ -1,0 +1,85 @@
+html {
+    --lumo-border-radius: 0.5em;
+    --lumo-base-color: #f4f8fa;
+    --lumo-shade-5pct: rgba(0, 0, 0, 0.05);
+    --lumo-shade-10pct: rgba(0, 0, 0, 0.1);
+    --lumo-shade-20pct: rgba(0, 0, 0, 0.2);
+    --lumo-shade-30pct: rgba(0, 0, 0, 0.3);
+    --lumo-shade-40pct: rgba(0, 0, 0, 0.4);
+    --lumo-shade-50pct: rgba(0, 0, 0, 0.5);
+    --lumo-shade-60pct: rgba(0, 0, 0, 0.6);
+    --lumo-shade-70pct: rgba(0, 0, 0, 0.7);
+    --lumo-shade-80pct: rgba(0, 0, 0, 0.8);
+    --lumo-shade-90pct: rgba(0, 0, 0, 0.9);
+    --lumo-shade: #000000;
+    --lumo-tint-5pct: rgba(39, 92, 142, 0.05);
+    --lumo-tint-10pct: rgba(39, 92, 142, 0.1);
+    --lumo-tint-20pct: rgba(39, 92, 142, 0.2);
+    --lumo-tint-30pct: rgba(39, 92, 142, 0.3);
+    --lumo-tint-40pct: rgba(39, 92, 142, 0.4);
+    --lumo-tint-50pct: rgba(39, 92, 142, 0.5);
+    --lumo-tint-60pct: rgba(39, 92, 142, 0.6);
+    --lumo-tint-70pct: rgba(39, 92, 142, 0.7);
+    --lumo-tint-80pct: rgba(39, 92, 142, 0.8);
+    --lumo-tint-90pct: rgba(39, 92, 142, 0.9);
+    --lumo-tint: #275C8E;
+    --lumo-primary-text-color: rgb(39, 92, 142);
+    --lumo-primary-color-50pct: rgba(39, 92, 142, 0.5);
+    --lumo-primary-color-10pct: rgba(39, 92, 142, 0.1);
+    --lumo-primary-color: #0ba1e2;
+    --lumo-primary-contrast-color: #ffffff;
+    --lumo-error-text-color: rgb(160, 0, 0);
+    --lumo-error-color-50pct: rgba(160, 0, 0, 0.5);
+    --lumo-error-color-10pct: rgba(160, 0, 0, 0.1);
+    --lumo-error-color: #A00000;
+    --lumo-success-text-color: rgb(11, 161, 226);
+    --lumo-success-color-50pct: rgba(11, 161, 226, 0.5);
+    --lumo-success-color-10pct: rgba(11, 161, 226, 0.1);
+    --lumo-success-color: #0BA1E2;
+}
+
+
+
+
+:host(:not([theme~="tertiary"]):not([theme~="primary"]):not([theme~="error"]):not([theme~="success"])) {
+    color: var(--lumo-body-text-color);
+}
+
+:host([theme~="primary"]) {
+    text-shadow: 0 -1px 0 var(--lumo-shade-20pct);
+}
+
+[part="input-field"] {
+    box-shadow: inset 0 0 0 1px var(--lumo-contrast-30pct);
+    background-color: var(--lumo-base-color);
+}
+
+:host([invalid]) [part="input-field"] {
+    box-shadow: inset 0 0 0 1px var(--lumo-error-color);
+}
+
+[part="backdrop"] {
+    background-image: url("stAugustin.jpg") !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    position: relative !important;
+    background-size: cover !important;
+}
+
+[part="overlay"] {
+    background-image: url("stAugustin.jpg");
+    z-index: 1000;
+    background-size: cover;
+}
+
+[part="content"] {
+    background-image: url("stAugustin.jpg");
+    z-index: 10;
+    background-size: cover;
+}
+
+[part="backdrop"] {
+    background-color: transparent !important;
+}
